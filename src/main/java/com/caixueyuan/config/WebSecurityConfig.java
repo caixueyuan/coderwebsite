@@ -75,10 +75,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
             // Un-secure H2 Database
             .antMatchers("/h2-console/**/**").permitAll()
-
+            .antMatchers("/register").permitAll()
+                .antMatchers("/forgetPassword").permitAll()
             .antMatchers("/auth/**").permitAll()
-            .anyRequest().authenticated();
-
+            .anyRequest().authenticated()
+                .and()
+                .formLogin()
+                .loginPage("/login.html")
+                .defaultSuccessUrl("/success.html")
+                .permitAll()
+                .and()
+                .logout()
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/index.html")
+                .permitAll();
         // Custom JWT based security filter
         JwtAuthorizationTokenFilter authenticationTokenFilter = new JwtAuthorizationTokenFilter(userDetailsService(), jwtTokenUtil, tokenHeader);
         httpSecurity
@@ -107,11 +117,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers(
                 HttpMethod.GET,
                 "/",
+                "/css/font-awesome.4.6.0.css",
                 "/*.html",
                 "/favicon.ico",
                 "/**/*.html",
                 "/**/*.css",
-                "/**/*.js"
+                "/**/*.js",
+                    "/images/**"
             )
 
             // Un-secure H2 Database (for testing purposes, H2 console shouldn't be unprotected in production)

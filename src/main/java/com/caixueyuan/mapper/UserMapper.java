@@ -53,4 +53,14 @@ public interface UserMapper {
 
     @Update("update users set password = #{password} where id = #{id}")
     void updateOne(UserEntity userEntity);
+
+    @Select("select * from users where email = #{email}")
+    @Results({
+            @Result(property = "id",column = "id"),
+            @Result(property = "userName",column = "username"),
+            @Result(property = "password",column = "password"),
+            @Result(property = "email",column = "email")
+    })
+    List<UserEntity> getOneByEmail(@Param("email") String email);
+
 }

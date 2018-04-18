@@ -1,116 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <title>JWT Spring Security Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Triangle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
-   <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
 
-   <!-- Optional theme -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-         integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-</head>
 <body>
-<div class="container">
-   <h1>JWT Spring Security Demo</h1>
+<header id="header">
+    <div class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-   <div class="alert alert-danger" id="notLoggedIn">Not logged in!</div>
+                <a class="navbar-brand" href="index.html">
+                    <h1><img src="images/logo.png" alt="logo"></h1>
+                </a>
 
-   <div class="row">
-      <div class="col-md-6">
-         <div class="panel panel-default" id="login">
-            <div class="panel-heading">
-               <h3 class="panel-title">Login</h3>
             </div>
-            <div class="panel-body">
-               <form id="loginForm">
-                  <div class="form-group">
-                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="username"
-                            required name="username">
-                  </div>
-                  <div class="form-group">
-                     <input type="password" class="form-control" id="exampleInputPassword1"
-                            placeholder="password" required name="password">
-                  </div>
-                  <div class="well">
-                     Try one of the following logins
-                     <ul>
-                        <li>admin & admin</li>
-                        <li>user & password</li>
-                        <li>disabled & password</li>
-                     </ul>
-                  </div>
-                  <button type="submit" class="btn btn-default">login</button>
-               </form>
+            <div class="collapse navbar-collapse">
+                <ul id = "menumanager" class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                        <ul role="menu" class="sub-menu">
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="aboutus2.html">About 2</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="contact2.html">Contact us 2</a></li>
+                            <li><a href="404.html">404 error</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul role="menu" class="sub-menu">
+                            <li><a href="blog.html">Blog Default</a></li>
+                            <li><a href="blogtwo.html">Timeline Blog</a></li>
+                            <li><a href="blogone.html">2 Columns + Right Sidebar</a></li>
+                            <li><a href="blogthree.html">1 Column + Left Sidebar</a></li>
+                            <li><a href="blogfour.html">Blog Masonary</a></li>
+                            <li><a href="blogdetails.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
+                        <ul role="menu" class="sub-menu">
+                            <li><a href="portfolio.html">Portfolio Default</a></li>
+                            <li><a href="portfoliofour.html">Isotope 3 Columns + Right Sidebar</a></li>
+                            <li><a href="portfolioone.html">3 Columns + Right Sidebar</a></li>
+                            <li><a href="portfoliotwo.html">3 Columns + Left Sidebar</a></li>
+                            <li><a href="portfoliothree.html">2 Columns</a></li>
+                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shortcodes.html ">Shortcodes</a></li>
+                    <!--<li><a href="login.html">登陆/注册</a></li>
+-->                </ul>
             </div>
-         </div>
-
-         <div id="userInfo">
-            <div class="panel panel-default">
-               <div class="panel-heading">
-                  <h3 class="panel-title">Authenticated user</h3>
-               </div>
-               <div class="panel-body">
-                  <div id="userInfoBody"></div>
-                  <button type="button" class="btn btn-default" id="logoutButton">logout</button>
-               </div>
+            <div class="search">
+                <form role="form">
+                    <i class="fa fa-search"></i>
+                    <div class="field-toggle">
+                        <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                    </div>
+                </form>
             </div>
-         </div>
-      </div>
 
-      <div class="col-md-6">
-         <div class="btn-group" role="group" aria-label="..." style="margin-bottom: 16px;">
-            <button type="button" class="btn btn-default" id="exampleServiceBtn">call example service</button>
-            <button type="button" class="btn btn-default" id="adminServiceBtn">call admin protected service</button>
-         </div>
-         <div class="panel panel-default">
-            <div class="panel-heading">
-               <h3 class="panel-title">Response:</h3>
-            </div>
-            <div class="panel-body">
-               <pre id="response"></pre>
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
+</header>
+<!--/#header-->
 
-   <div class="row">
-      <div id="loggedIn" class="col-md-6">
-         <div class="panel panel-default">
-            <div class="panel-heading">
-               <h3 class="panel-title">Token information</h3>
-            </div>
-            <div class="panel-body" id="loggedInBody"></div>
-         </div>
-      </div>
-   </div>
-</div>
 
-<div class="modal fade" tabindex="-1" role="dialog" id="loginErrorModal">
-   <div class="modal-dialog">
-      <div class="modal-content">
-         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Login unsuccessful</h4>
-         </div>
-         <div class="modal-body"></div>
-         <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-         </div>
-      </div><!-- /.modal-content -->
-   </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+<script src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src = "js/menumanager.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-<script src="https://code.jquery.com/jquery-2.2.2.js" integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="
-        crossorigin="anonymous"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
-<script src="js/libs/jwt-decode.min.js"></script>
-<script src="js/client.js"></script>
 </body>
 </html>

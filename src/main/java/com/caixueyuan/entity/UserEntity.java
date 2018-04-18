@@ -16,7 +16,15 @@ public class UserEntity implements Serializable {
     private String userName;
     private String password;
     private String email;
-    private boolean roles;
+    private boolean roles = false;
+
+    public UserEntity(){}
+
+    public UserEntity(String userName,String password,String email){
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
 
     public UserEntity(String userName, String password, String email, boolean roles) {
         this.userName = userName;

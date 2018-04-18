@@ -53,6 +53,12 @@ public class UserMapperTest {
         userMapper.updateOne(userEntity);
     }
 
+    @Test
+    public void testGetOneByEmail(){
+        String email = "2529982859@qq.com";
+        List<UserEntity> userEntitys = userMapper.getOneByEmail(email);
+        System.out.println(userEntitys);
+    }
 
 
 }

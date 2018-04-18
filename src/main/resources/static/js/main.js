@@ -15,6 +15,7 @@ jQuery(function($) {'use strict';
 		$("#video-container").fitVids();
 	}
 
+
 	//Initiat WOW JS
 	new WOW().init();
 
