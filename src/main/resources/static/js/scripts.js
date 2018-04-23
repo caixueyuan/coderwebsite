@@ -161,6 +161,7 @@ jQuery(document).ready(function() {
             data: JSON.stringify(signUpData),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
+            headers: createAuthorizationTokenHeader(),
             success: function (data, textStatus, jqXHR) {
                 window.alert("注册成功请重新登录");
                 window.location.href = "/login.html";
@@ -215,3 +216,15 @@ function getCookie(name){
 function delCookie(name){
     setCookie(name,null,-1);
 };
+
+function createAuthorizationTokenHeader() {
+    var token = getJwtToken();
+    if (token) {
+        return {"Authorization": "Bearer " + token};
+    } else {
+        return {};
+    }
+}
+function getJwtToken() {
+    return localStorage.getItem("jwtToken");
+}

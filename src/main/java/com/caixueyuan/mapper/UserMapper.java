@@ -63,4 +63,9 @@ public interface UserMapper {
     })
     List<UserEntity> getOneByEmail(@Param("email") String email);
 
+    @Select("select username from users where id = #{userid}")
+    @Results({
+            @Result(property = "username",column = "username")
+    })
+    String getUserNameById(Integer userid);
 }

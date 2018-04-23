@@ -18,6 +18,18 @@ public class JwtUser implements UserDetails {
     private final Collection<? extends GrantedAuthority> authorities;
     private final boolean enabled = true;
 
+    @Override
+    public String toString() {
+        return "JwtUser{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", authorities=" + authorities +
+                ", enabled=" + enabled +
+                '}';
+    }
+
     public JwtUser(
           Integer id,
           String username,

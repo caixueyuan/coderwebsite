@@ -7,6 +7,7 @@
   Version: 1.1
   */
 
+
   @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
   @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
@@ -159,15 +160,31 @@
     background: rgba(210, 153, 72, 0.7);
   }
 
+hr.carved {
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 2px;
+  line-height: 2px;
+  font-size: 0;
+  margin: 1.4em 0;
+  border: none 0;
+  background: #ddd;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.5, rgb(221,221,221)),color-stop(0.5, rgb(255,255,255)));
+  background-image: -webkit-linear-gradient(center top,rgb(221,221,221) 50%,rgb(255,255,255) 50%);
+  background-image: -o-linear-gradient(center top,rgb(221,221,221) 50%,rgb(255,255,255) 50%);
+  background-image: -moz-linear-gradient(center top,rgb(221,221,221) 50%,rgb(255,255,255) 50%);
+}
 
 /*************************
 *******Header******
 **************************/
 
 
+
 #header{
   margin-bottom: 0;
-  padding: 0px 0 60px 0;
+  padding: 0px 0 0px 0;
 }
 
 #header .navbar-inverse .container{
@@ -251,7 +268,7 @@
 }
 
 #header .navbar {
-  background: #fff;
+  background: #344245;
   border: 0;
   margin-bottom: 0;
 }
@@ -275,7 +292,7 @@
 }
 
 #header .navbar-nav.navbar-right >li a {
-  color: #000;
+  color: #fff;
   font-size: 12px;
   padding: 20px;
   text-transform: uppercase;

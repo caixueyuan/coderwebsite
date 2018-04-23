@@ -60,5 +60,10 @@ public class UserMapperTest {
         System.out.println(userEntitys);
     }
 
-
+    @Test
+    public void testGetUserNameById(){
+        Integer userid = 1;
+        String username = userMapper.getUserNameById(userid);
+        Assert.assertEquals(username,"caixueyuan");
+    }
 }
