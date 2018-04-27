@@ -43,9 +43,12 @@ public class CategoryService {
             CategoryEntity categoryEntity = new CategoryEntity();
             categoryEntity.setCategory(key);
             List<String> languages = new ArrayList<>();
+            List<Integer> categoryids = new ArrayList<>();
             for(CategoryLanguage item : maps.get(key)){
                 languages.add(item.getLanguage());
+                categoryids.add(item.getCategoryid());
             }
+            categoryEntity.setCategoryids(categoryids);
             categoryEntity.setLanguages(languages);
             categoryEntities.add(categoryEntity);
         }

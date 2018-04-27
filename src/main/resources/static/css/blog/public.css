@@ -4,7 +4,7 @@
 }
 body {
     font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";
-    color: #85888e;
+    color: #000000;
     min-width: 1300px;
 }
 
@@ -29,7 +29,7 @@ input {
 }
 
 a {
-	color: #85888e;
+	color: #2e6da4;
 	text-decoration: none;
 	outline: 0;
 }

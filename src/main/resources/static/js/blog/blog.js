@@ -26,9 +26,10 @@ $(document).ready(function() {
                 var $p = $("<p>").addClass("fuMenu").text(data[i].category)
                 var $div = $("<div1>").addClass("div1");
                 var languages = data[i].languages;
+                var categoryids = data[i].categoryids;
                 var $img = $("<img class='xiala' src='images/blog/xiala.png' />")
                 for(var j in languages){
-                    var $p_inside = $("<p>").addClass("zcd").attr("id",languages[j]).text(languages[j]);
+                    var $p_inside = $("<p>").addClass("zcd").attr("id",categoryids[j]).text(languages[j]);
                     $div.append($p_inside);
                 }
                 $li.append($p);
@@ -176,7 +177,7 @@ $(document).ready(function() {
         /*       var userName = getJwtName();*/
         console.log("category="+$(".removes").parent().parent().find(".fuMenu").text());
         console.log("language="+$(".removes").text());
-        var userName = "caixueyuan";
+        var userName = getJwtName();
         var categoryLanguage = {
             "language" : $(".removes").text(),
             "category" : $(".removes").parent().parent().find(".fuMenu").text()
@@ -532,4 +533,7 @@ function createAuthorizationTokenHeader() {
 
 function getJwtToken() {
     return localStorage.getItem("jwtToken");
+}
+function getJwtName(){
+    return localStorage.getItem("JwtName");
 }

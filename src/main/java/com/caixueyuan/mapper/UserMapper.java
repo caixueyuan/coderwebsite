@@ -39,6 +39,13 @@ public interface UserMapper {
     })
     UserEntity getOneById(Integer id);
 
+    @Select("select id,username from users where id = #{id}")
+    @Results({
+            @Result(property = "id",column = "id"),
+            @Result(property = "userName",column = "username")
+    })
+    UserEntity getOneByIdWithOutPassword(Integer id);
+
     @Select("select * from Users where username = #{userName} and password = #{password}")
     @Results({
             @Result(property = "id",column = "id"),

@@ -9,14 +9,15 @@ public class CategoryEntity{
     private String category;
 
 
-
+    private List<Integer> categoryids;
     private List<String> languages;
 
     public CategoryEntity(){
 
     }
-    public CategoryEntity(String category, List<String> languages) {
+    public CategoryEntity(String category, List<Integer> categoryids, List<String> languages) {
         this.category = category;
+        this.categoryids = categoryids;
         this.languages = languages;
     }
 
@@ -36,4 +37,11 @@ public class CategoryEntity{
         this.languages = languages;
     }
 
+    public List<Integer> getCategoryids() {
+        return categoryids;
+    }
+
+    public void setCategoryids(List<Integer> categoryids) {
+        this.categoryids = categoryids;
+    }
 }

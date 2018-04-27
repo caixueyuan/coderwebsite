@@ -7,22 +7,22 @@
     <meta name="author" content="">
     <title>Blog + Left Sidebar | Triangle</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Optional theme -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-    	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-		<!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">-->
-	    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/lightbox.css" rel="stylesheet"> 
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css" media="all">
 
     <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-	    <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -30,17 +30,15 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 
 
+    <!-- CSS -->
+    <!--        <link rel="stylesheet" type="text/css" href="css/loginstyles.css">-->
+    <!-- CSS -->
+    <!--        <link rel="stylesheet" type="text/css" href="css/loginstyles.css">
+
+            <link rel="stylesheet" href="css/supersized.css">-->
 
 
-        <!-- CSS -->
-<!--        <link rel="stylesheet" type="text/css" href="css/loginstyles.css">-->
-        <!-- CSS -->
-<!--        <link rel="stylesheet" type="text/css" href="css/loginstyles.css">
-
-        <link rel="stylesheet" href="css/supersized.css">-->
-
-
-<!--        <link rel="stylesheet" href="css/supersized.css">-->
+    <!--        <link rel="stylesheet" href="css/supersized.css">-->
 </head><!--/head-->
 
 <body>
@@ -61,9 +59,9 @@
 
             </div>
             <div class="collapse navbar-collapse">
-                <ul id = "menumanager" class="nav navbar-nav navbar-right">
+                <ul id="menumanager" class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                    <li class="dropdown"><a href="wenda.html">问答 <i class="fa fa-angle-down"></i></a>
                         <ul role="menu" class="sub-menu">
                             <li><a href="aboutus.html">About</a></li>
                             <li><a href="aboutus2.html">About 2</a></li>
@@ -75,12 +73,12 @@
                             <li><a href="coming-soon.html">Coming Soon</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown active"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                    <li class="dropdown active"><a href="blog.html">小经验 <i class="fa fa-angle-down"></i></a>
                         <ul role="menu" class="sub-menu">
                             <li><a href="blog.html">Blog Default</a></li>
                             <li><a href="blogtwo.html">Timeline Blog</a></li>
                             <li><a href="blogone.html">2 Columns + Right Sidebar</a></li>
-                            <li><a class = "active" href="blogthree.html">1 Column + Left Sidebar</a></li>
+                            <li><a class="active" href="blogthree.html">1 Column + Left Sidebar</a></li>
                             <li><a href="blogfour.html">Blog Masonary</a></li>
                             <li><a href="blogdetails.html">Blog Details</a></li>
                         </ul>
@@ -111,39 +109,38 @@
     </div>
 </header>
 
-    <div class="middle">
-        <!-- 隐藏菜单 -->
-<!--        <div class="hidLeftMenu">
-            <img class="openMenu" src="images/blog/open.png"/>
-            <p class="hidTitle">各地名吃菜单</p>
-        </div>-->
-        <!-- 隐藏菜单结束 -->
-        <!-- 菜单-开始 -->
-        <div class="leftMenu">
-            <div class="menu_list">
-                <ul ms-controller="test">
+<div class="middle">
+    <!-- 隐藏菜单 -->
+    <!--        <div class="hidLeftMenu">
+                <img class="openMenu" src="images/blog/open.png"/>
+                <p class="hidTitle">各地名吃菜单</p>
+            </div>-->
+    <!-- 隐藏菜单结束 -->
+    <!-- 菜单-开始 -->
+    <div class="leftMenu">
+        <div class="menu_list">
+            <ul ms-controller="test">
 
-                    <li class="lis">
-                        <p class="fuMenu">武汉名吃</p>
-                        <img class="xiala" src="images/blog/xiala.png" />
-                        <div class="div1">
-                            <p class="zcd" id="zcd1">老通城的三鲜豆皮</p>
-                            <p class="zcd" id="zcd2">四季美的汤包</p>
-                            <p class="zcd" id="zcd3">蔡林记的热干面</p>
-                            <p class="zcd" id="zcd4">顺香居的烧麦</p>
-                            <p class="zcd" id="zcd5">福庆和的牛肉豆丝</p>
-                            <p class="zcd" id="zcd6">小桃园的煨汤</p>
-                            <p class="zcd" id="zcd7">田启恒的糊汤粉</p>
-                            <p class="zcd" id="zcd8">谢荣德的面窝</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                <li class="lis">
+                    <p class="fuMenu">武汉名吃</p>
+                    <img class="xiala" src="images/blog/xiala.png"/>
+                    <div class="div1">
+                        <p class="zcd" id="zcd1">老通城的三鲜豆皮</p>
+                        <p class="zcd" id="zcd2">四季美的汤包</p>
+                        <p class="zcd" id="zcd3">蔡林记的热干面</p>
+                        <p class="zcd" id="zcd4">顺香居的烧麦</p>
+                        <p class="zcd" id="zcd5">福庆和的牛肉豆丝</p>
+                        <p class="zcd" id="zcd6">小桃园的煨汤</p>
+                        <p class="zcd" id="zcd7">田启恒的糊汤粉</p>
+                        <p class="zcd" id="zcd8">谢荣德的面窝</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-
-
-
     </div>
+
+
+</div>
 <div class="theme-buy">
 
     <a class="btn btn-primary btn-large theme-login" href="javascript:;" style="text-align:right;">点击查看效果</a>
@@ -156,7 +153,7 @@
 
         <a href="javascript:;" title="关闭" class="close">×</a>
 
-        <h3>登录 是一种态度</h3>
+        <h3>小经验分享</h3>
 
     </div>
 
@@ -168,11 +165,11 @@
 
                 <li><h2>请写出你的所见所得</h2></li>
 
-                <li><strong>标题: </strong><input id= "blogTitle"class="ipt" type="text" /></li>
+                <li><strong>标题: </strong><input id="blogTitle" class="ipt" type="text"/></li>
 
-                <li><strong>内容: </strong><textarea id = "blogContent" class="ipt1" type="text" ></textarea></li>
+                <li><strong>内容: </strong><textarea id="blogContent" class="ipt1" type="text"></textarea></li>
 
-                <li><a id = "upload" class="btn btn-primary" >发表</a></li>
+                <li><a id="upload" class="btn btn-primary">发表</a></li>
 
             </ol>
 
@@ -185,7 +182,7 @@
 <div class="theme-popover-mask"></div>
 
 
-<div id = "blogdetail" class="theme-popover1">
+<div id="blogdetail" class="theme-popover1">
 
     <div class="theme-poptit1">
 
@@ -195,21 +192,21 @@
 
     </div>
 
-<!--    <div class="col-md-12 col-sm-12">
-        <div id = "blogdetail" class="single-blog two-column">
-            <div class="post-content overflow">
-                <h2 class="post-title bold">@blogTitle</a></h2>
-                <h3 class="post-author"><a href="#">@userName</a></h3>
-                <p>@blogContent</p>
-                <div class="post-bottom overflow">
-                    <ul class="nav navbar-nav post-nav">
-                        <li><a href="#"><i class="fa fa-tag"></i>@hate</a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i>@love</a></li>
-                    </ul>
+    <!--    <div class="col-md-12 col-sm-12">
+            <div id = "blogdetail" class="single-blog two-column">
+                <div class="post-content overflow">
+                    <h2 class="post-title bold">@blogTitle</a></h2>
+                    <h3 class="post-author"><a href="#">@userName</a></h3>
+                    <p>@blogContent</p>
+                    <div class="post-bottom overflow">
+                        <ul class="nav navbar-nav post-nav">
+                            <li><a href="#"><i class="fa fa-tag"></i>@hate</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i>@love</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>-->
+        </div>-->
 
 </div>
 
@@ -218,16 +215,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 col-sm-7">
-            <div id = "bloglist"class="row">
-
+            <div id="bloglist" class="row">
 
 
                 <div class="col-md-12 col-sm-12">
                     <div class="single-blog two-column">
                         <div class="post-content overflow">
-                            <h2 class="post-title bold"><a href="blogdetails.html">Advanced business cards design</a></h2>
+                            <h2 class="post-title bold"><a href="blogdetails.html">Advanced business cards design</a>
+                            </h2>
                             <h3 class="post-author"><a href="#">Posted by micron News</a></h3>
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber [...]</p>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                facilisi. Nam liber [...]</p>
                             <a href="#" class="read-more theme-login1 ">View More</a>
                             <div class="post-bottom overflow">
                                 <ul class="nav navbar-nav post-nav">
@@ -241,7 +241,6 @@
                 </div>
 
 
-
                 <div class="col-md-12 col-sm-12">
                     <div class="single-blog two-column">
                         <!--<div class="post-thumb">-->
@@ -251,9 +250,13 @@
                         <!--</div>-->
                         <!--</div>-->
                         <div class="post-content overflow">
-                            <h2 class="post-title bold"><a href="blogdetails.html">Advanced business cards design</a></h2>
+                            <h2 class="post-title bold"><a href="blogdetails.html">Advanced business cards design</a>
+                            </h2>
                             <h3 class="post-author"><a href="#">Posted by micron News</a></h3>
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber [...]</p>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                facilisi. Nam liber [...]</p>
                             <a href="#" class="read-more">View More</a>
                             <div class="post-bottom overflow">
                                 <ul class="nav navbar-nav post-nav">
@@ -274,9 +277,13 @@
                         <!--</div>-->
                         <!--</div>-->
                         <div class="post-content overflow">
-                            <h2 class="post-title bold"><a href="blogdetails.html">Advanced business cards design</a></h2>
+                            <h2 class="post-title bold"><a href="blogdetails.html">Advanced business cards design</a>
+                            </h2>
                             <h3 class="post-author"><a href="#">Posted by micron News</a></h3>
-                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber [...]</p>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                facilisi. Nam liber [...]</p>
                             <a href="#" class="read-more">View More</a>
                             <div class="post-bottom overflow">
                                 <ul class="nav navbar-nav post-nav">
@@ -307,21 +314,21 @@
         </div>
     </div>
 </div>
-    <script src = "js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-    <script type = "text/javascript" src = "js/blog/avalon.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<script type="text/javascript" src="js/blog/avalon.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 
-    <script src = "js/menumanager.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+<script src="js/menumanager.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-    <script type = "text/javascript" src = "js/blog/blog.js"></script>
-    <script type="text/javascript" src="js/blog/menu.js"></script>
-    <script type="text/javascript" src="js/blog/addBlog.js"></script>
+<script type="text/javascript" src="js/blog/blog.js"></script>
+<script type="text/javascript" src="js/blog/menu.js"></script>
+<script type="text/javascript" src="js/blog/addBlog.js"></script>
 <!-- 通用样式 -->
 <link rel="stylesheet" type="text/css" href="css/blog/public.css"/>
 <!-- 动态菜单CSS -->
@@ -329,7 +336,6 @@
 
 
 <script>
-
 
 
 </script>

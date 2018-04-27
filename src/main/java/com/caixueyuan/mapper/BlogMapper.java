@@ -26,7 +26,7 @@ public interface BlogMapper {
 /*            @Result(property = "CategoryLanguage",column = "categoryid",
                 one=@One(select="com.caixueyuan.mapper.CategoryMapper.getCategoryId",fetchType= FetchType.EAGER))*/
     })
-    List<BlogEntity> getBlogsByCategory(String category);
+    List<BlogEntity> getBlogsByCategory(String language);
 
     @Insert("insert into blog(categoryid,blogtitle,blogcontent,userid,love,hate)" +
             "values" +

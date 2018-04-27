@@ -30,4 +30,12 @@ public interface CategoryMapper {
             @Result(property = "language" ,column = "language")
     })
     CategoryLanguage getCategoryId(CategoryLanguage categoryLanguage);
+
+    @Select("select * from category_language where categoryid = #{categoryid}")
+    @Results({
+            @Result(property = "categoryid",column = "categoryid"),
+            @Result(property = "category" ,column = "category"),
+            @Result(property = "language" ,column = "language")
+    })
+    CategoryLanguage getCategoryByIdTrue(Integer categoryid);
 }
