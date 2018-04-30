@@ -13,7 +13,7 @@ import java.util.List;
 @Mapper
 public interface BlogMapper {
 
-    @Select("select * from blog where categoryid in (select categoryid from category_language where language = #{language})")
+    @Select("select * from blog  where categoryid in (select categoryid from category_language where language = #{language}) order by love desc")
     @Results({
             @Result(property = "blogid",column = "blogid"),
             @Result(property = "blogTitle" ,column = "blogtitle"),

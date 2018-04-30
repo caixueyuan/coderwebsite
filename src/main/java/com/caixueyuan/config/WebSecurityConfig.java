@@ -74,6 +74,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
 
             // Un-secure H2 Database
+                .antMatchers("/upload1").permitAll()
+                .antMatchers("/upload").permitAll()
+                .antMatchers("/checkFile").permitAll()
+                .antMatchers("/checkChunk").permitAll()
+                .antMatchers("/merge").permitAll()
             .antMatchers("/h2-console/**/**").permitAll()
             .antMatchers("/register").permitAll()
                 .antMatchers("/login").permitAll()

@@ -1048,6 +1048,7 @@ ul.elements li > i{
 #portfolio .row{
   margin-left: -10px;
   margin-right: -10px;
+  margin-top:50px;
 }
 
 .portfolio-view {

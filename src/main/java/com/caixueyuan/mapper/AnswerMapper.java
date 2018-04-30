@@ -15,7 +15,7 @@ import java.util.List;
 public interface AnswerMapper {
 
     @Transactional
-    @Select("select * from answers where questionid = #{questionId}")
+    @Select("select * from answers order by answerlove desc where questionid = #{questionId}")
     @Results({
             @Result(property = "answerId",column = "answerid"),
             @Result(property = "answerContent",column = "answercontent"),

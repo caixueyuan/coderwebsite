@@ -26,7 +26,7 @@ public class QuestionService {
     }
 
     public List<QuestionEntity> insertQuestion(QuestionEntity questionEntity){
-/*        questionMapper.insertQuestion(questionEntity);*///TODO
+        questionMapper.insertQuestion(questionEntity);//TODO
         String language = questionEntity.getCategoryLanguage().getLanguage();
         List<QuestionEntity> questionEntityList = questionMapper.getQuestionsByLanguage(language);
         return questionEntityList;
